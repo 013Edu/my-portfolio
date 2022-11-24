@@ -341,6 +341,7 @@ span:nth-child(2) {
       max-width: 1200px;
       flex-wrap: wrap;
       justify-content: center;
+      margin: 0 auto;
    }
 
    .text-experience{
