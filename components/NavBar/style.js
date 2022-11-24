@@ -81,10 +81,14 @@ label span:nth-child(3){
   top:8px;
 }
 
+@media (max-width: 580px){
+  min-width: 580px;
+}
+
 
 @media  (max-width: 500px){
     .container{
-      min-width: 490px;
+      min-width: 580px;
     }
 }
 

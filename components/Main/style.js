@@ -370,6 +370,11 @@ span:nth-child(2) {
          text-align: center;
       }
 
+      .container-2{
+         flex-direction: column;
+         min-width: 600px;
+      }
+
       button{
          margin: 0 auto;
       }
@@ -389,13 +394,22 @@ span:nth-child(2) {
          font-size: 20px;
       }
 
-      .skill-container{
-   
-      }
-
       .text-experience{
          font-size: 1rem;
          margin-bottom: 3rem;
+         min-width: 600px;
+      }
+
+      .projects{
+         min-width: 600px;
+      }
+
+      .skills{
+         min-width: 600px;
+      }
+
+      .skill-container{
+         min-width: 600px;
       }
       }
 

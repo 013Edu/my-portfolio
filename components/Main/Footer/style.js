@@ -16,5 +16,19 @@ export const SocialMedia = styled.div`
     .direct-author{
         margin: 1rem 0;
     }
+    @media (max-width: 580px){
+        min-width: 600px;
+        text-align: center;
+    }
+
+    @media (max-width: 580px){
+        .div{
+        min-width: 600px;
+    }
+    .direct-author{
+        min-width: 600px;
+    }
+   }
+   
 
 `
