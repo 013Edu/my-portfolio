@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Principal = styled.div`
+    position: relative;
     height: 100vh;
      .container{
         display: flex;
@@ -351,6 +352,12 @@ span:nth-child(2) {
       -webkit-text-stroke-color: #fff;
       color: transparent;
    }
+
+   .sidebar-content a{
+      margin: 1rem 0;
+      font-size: 1.3rem;
+      font-weight: bold;
+   }
    
       @media (max-width: 580px) {
 
@@ -395,13 +402,15 @@ span:nth-child(2) {
       }
 
       .text-experience{
-         font-size: 1rem;
+         font-size: 1.8rem;
          margin-bottom: 3rem;
          min-width: 600px;
       }
 
       .projects{
          min-width: 600px;
+         padding: 1.8rem;
+         margin-bottom: 250px;
       }
 
       .skills{

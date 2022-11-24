@@ -558,7 +558,7 @@ export function Main(){
                           <span></span>
                           <span></span>
                           <span></span>
-                          <span></span> <Image src={wpp} alt="icone do whatsapp" width={20} height={20} />
+                          <span></span> <Link href="https://web.whatsapp.com/"><Image src={wpp} alt="icone do whatsapp" width={20} height={20} /></Link>
                         </button>
                    </div>
                 </div>
@@ -650,7 +650,7 @@ export function Main(){
             <h3>Carreira</h3>
             <div className="career-container-2">
                 <div className="career-subtitle">
-                  2022
+                  2021
                 </div>
                 <div className="career-content">
                   <div>

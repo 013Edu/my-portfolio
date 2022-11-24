@@ -70,16 +70,40 @@ label span:nth-child(3){
 #checkbox-menu:checked + label span:nth-child(1){
   transform: rotate(-45deg);
   top: 8px;
+
 }
 
 #checkbox-menu:checked + label span:nth-child(2){
   opacity: 0;
+
 }
 
 #checkbox-menu:checked + label span:nth-child(3){
   transform: rotate(45deg);
   top:8px;
 }
+
+   .sidebar{
+      background-color: #121212;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 50%;
+      bottom: 0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: none;
+   }
+
+   .sidebar-content{
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      flex-direction: column;
+      padding: 1.3rem;
+   }
+
+
 
 @media (max-width: 580px){
   min-width: 580px;
@@ -94,7 +118,7 @@ label span:nth-child(3){
 
 @media  (max-width: 580px){
     .container-title{
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
 
     .icon{
