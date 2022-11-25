@@ -1,5 +1,31 @@
 import styled from "styled-components";
 
+
+
+export const Container = styled.div`
+  height: 100px;
+  display: flex;
+  margin: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000; 
+  border-bottom: 1px solid;
+  border-color: rgba(22, 21, 21);
+  z-index: 1000;
+  > svg {
+    position: fixed;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-left: 32px;
+    cursor: pointer;
+  }
+
+
+`;
+
+
+
 export const Nav = styled.nav`
     border-bottom: 1px solid;
     border-color: rgba(22, 21, 21);

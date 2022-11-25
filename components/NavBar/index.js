@@ -1,26 +1,27 @@
-import { Nav } from "./style.js";
-
+import { Container } from './style'
+import { FaBars } from 'react-icons/fa'
+import Sidebar from '../Sidebar'
+import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 export function NavBar() {
-  return (
-    <Nav>
-      <div className="container">
-        <h2 className="container-title">Eduardo Gonçalves</h2>
-        <div className="container-language">
-        <FontAwesomeIcon className="icon" icon={faCode} color="--fa-inverse" width={50} height={50} />
-        </div>
-        <div class="content">
-          <input type="checkbox" id="checkbox-menu" />
+  const [sidebar, setSidebar] = useState(false)
 
-          <label for="checkbox-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
+  const showSiderbar = () => setSidebar(!sidebar)
+  return (
+  
+      <Container>
+      <FaBars onClick={showSiderbar} />
+      {sidebar && <Sidebar active={setSidebar} />}
+      <div></div>
+      <div className='position'>
+      <FontAwesomeIcon icon={faCode} color="--fa-inverse" width={60} height={60} />
       </div>
-    </Nav>
-  );
+      <div>
+        <h2>Eduardo Gonçalves</h2>
+      </div>
+      </Container>
+    )
 }
