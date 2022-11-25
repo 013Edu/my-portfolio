@@ -21,9 +21,8 @@ export const GlobalStyled = createGlobalStyle`
         color-scheme: dark;
     }
     body {
-        color: white;
-        background: #000;
-    }
+		background-color: ${(props) => props.theme};
+	}
     }
 
 `;

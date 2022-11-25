@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 100px;
   display: flex;
-  margin: 0 1rem;
+  padding: 1rem;
   align-items: center;
   justify-content: space-between;
   background-color: #000; 

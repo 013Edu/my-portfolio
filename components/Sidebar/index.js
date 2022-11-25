@@ -1,19 +1,8 @@
 import React from 'react'
-import { Container, Content } from './style'
-import { 
-  FaTimes, 
-  FaHome, 
-  FaEnvelope, 
-  FaRegSun, 
-  FaUserAlt, 
-  FaIdCardAlt, 
-  FaRegFileAlt,
-  FaRegCalendarAlt,
-  FaChartBar
-} from 'react-icons/fa'
-
-import SidebarItem from '../SidebarItem'
+import { Container, ContainerLink, Content } from './style'
 import Link from 'next/link'
+import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Sidebar = ({ active }) => {
 
@@ -23,11 +12,19 @@ const Sidebar = ({ active }) => {
 
   return (
     <Container sidebar={active}>
-      <FaTimes onClick={closeSidebar} />  
       <Content>
-        <Link href='/sobre'>Home</Link>
-        <SidebarItem Icon={FaUserAlt} Text="Users" Link={<Link href='/sobre' />} />
-        <SidebarItem Icon={FaEnvelope} Text="Mail" />
+       <ContainerLink>
+       <FontAwesomeIcon icon={faHome} color="--fa-inverse" width={20} height={20} />
+       <Link href='/' onClick={closeSidebar}> Home</Link>
+       </ContainerLink>
+       <ContainerLink>
+       <FontAwesomeIcon icon={faUser} color="--fa-inverse" width={20} height={20} />
+       <Link href='/sobre'> Sobre mim</Link>
+       </ContainerLink>
+       <ContainerLink>
+       <FontAwesomeIcon icon={faEnvelope} color="--fa-inverse" width={20} height={20} />
+       <Link href='/contato'> Contato</Link>
+       </ContainerLink>
       </Content>
     </Container>
   )

@@ -34,3 +34,25 @@ export const Container = styled.div`
 export const Content = styled.div`
   margin-top: 100px;
 `;
+
+export const ContainerLink = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: #1A202C; 
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0 15px 20px;
+  > svg {
+    margin: 0 20px;
+  }
+  &:hover {
+    background-color: black;
+  }
+
+  a{
+    margin-left: 0.5rem;
+  }
+`;
