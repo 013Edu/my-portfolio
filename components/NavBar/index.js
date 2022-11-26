@@ -3,7 +3,6 @@ import { FaBars } from 'react-icons/fa'
 import Sidebar from '../Sidebar'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 export function NavBar() {
