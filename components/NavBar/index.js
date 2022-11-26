@@ -1,5 +1,4 @@
 import { Container } from './style'
-import { FaBars } from 'react-icons/fa'
 import Sidebar from '../Sidebar'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
