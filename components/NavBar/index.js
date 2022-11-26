@@ -11,6 +11,7 @@ export function NavBar() {
   return (
   
       <Container>
+      <FontAwesomeIcon icon={faCode} color="--fa-inverse" width={60} height={60} onClick={showSiderbar}  />
       {sidebar && <Sidebar active={setSidebar} />}
       <div></div>
       <div className='position'>
