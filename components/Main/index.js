@@ -7,14 +7,13 @@ import aluroni from '../../public/aluroni_resized.png'
 import organo from '../../public/oie_resized.png'
 import pokenext from '../../public/pokenext_resized.png'
 import wpp from '../../public/whatsapp (2).png'
-import styled from '../../public/Design_sem_nome__4_-removebg-preview (1).png'
 
 
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3Alt, faGitAlt, faHtml5, faJs, faReact, } from "@fortawesome/free-brands-svg-icons";
-import { faBookBookmark, faN } from "@fortawesome/free-solid-svg-icons";
+import { faBookBookmark, faN, faPalette } from "@fortawesome/free-solid-svg-icons";
 import { Footer } from "./Footer";
 
 export function Main(){
@@ -720,7 +719,7 @@ export function Main(){
                   <p>Next</p>
                 </Skill> 
                 <Skill>
-                  <Image src={styled} width={100} height={100} />
+                <FontAwesomeIcon icon={faPalette} color="--fa-inverse" width={80} height={80} />
                   <p>Styled Components</p>
                 </Skill> 
                 <Skill>

@@ -4,6 +4,7 @@ import { Main } from "../components/Main";
 import { useState } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "../theme";
+import { ButtonEvent } from "../styles/GlobalStyled";
 
 
 
@@ -59,7 +60,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <button onClick={() => themeToggler()}>Clicar</button>
+      <ButtonEvent onClick={() => themeToggler()}>☼
+      </ButtonEvent>
       <Main />
      </StyledApp>
       </ThemeProvider>

@@ -8,20 +8,18 @@ export const Container = styled.div`
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  background-color: #000; 
+  background-color: ${(props) => props.theme.body2}; 
   border-bottom: 1px solid;
   border-color: rgba(22, 21, 21);
   z-index: 1000;
   > svg {
     position: fixed;
-    color: white;
+    color: ${(props) => props.theme.fontColor};
     width: 30px;
     height: 30px;
     margin-left: 32px;
     cursor: pointer;
   }
-
-
 `;
 
 

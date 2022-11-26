@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Principal = styled.div`
     position: relative;
     height: 100vh;
+
      .container{
         display: flex;
         justify-content: space-around;
@@ -25,6 +26,10 @@ export const Principal = styled.div`
         font-size: 23px;
      }
 
+     .container-image{
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+     }
+
      .container-hover{
       display: flex;
       flex-direction: column;
@@ -42,7 +47,7 @@ export const Principal = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #0A0C0D;
+        background-color: ${(props) => props.theme.body2};
         padding: 1rem;
         margin-bottom: 400px;
      }
@@ -76,7 +81,7 @@ export const Principal = styled.div`
      }
 
      .container-3{
-        background-color: #000;
+        background-color: ${(props) => props.theme.body2};
      }
 
      .projects{
@@ -90,7 +95,7 @@ export const Principal = styled.div`
      .underline{
         text-decoration: underline;
         text-decoration-color: #993399;
-        color: #fff;
+        color: ${(props) => props.theme.fontColor};
      }
 
      .projects{
@@ -126,7 +131,7 @@ export const Principal = styled.div`
       position: absolute;
       left: 29%;
       -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #fff;
+      -webkit-text-stroke-color: ${(props) => props.theme.fontColor};
       color: transparent;
       font-size: 1.8em;
      }
@@ -170,8 +175,8 @@ export const Principal = styled.div`
       display: inline-block;
       padding: 8px 20px;
       margin-top: 15px;
-      background-color: #fff;
-      color: #000;
+      background-color: ${(props) => props.theme.fontColor};
+      color: ${(props) => props.theme.body};
       font-weight: 700;
       border-radius: 3px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

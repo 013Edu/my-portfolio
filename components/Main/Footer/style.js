@@ -8,6 +8,7 @@ export const SocialMedia = styled.div`
     align-items: center;
     border-top: 1px solid rgba(22, 21, 21);
     padding: 8rem;
+    background-color: ${(props) => props.theme.body2};
 
      a{
         margin: 0 1rem;
