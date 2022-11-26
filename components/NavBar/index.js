@@ -2,7 +2,7 @@ import { Container } from './style'
 import Sidebar from '../Sidebar'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCode } from '@fortawesome/free-solid-svg-icons'
 
 export function NavBar() {
   const [sidebar, setSidebar] = useState(false)
@@ -11,7 +11,7 @@ export function NavBar() {
   return (
   
       <Container>
-      <FontAwesomeIcon icon={faCode} color="--fa-inverse" width={60} height={60} onClick={showSiderbar}  />
+      <FontAwesomeIcon icon={faBars} color="--fa-inverse" width={60} height={60} onClick={showSiderbar}  />
       {sidebar && <Sidebar active={setSidebar} />}
       <div></div>
       <div className='position'>
