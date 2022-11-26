@@ -1,5 +1,4 @@
 import { Container } from './style'
-import { FaBars } from 'react-icons/fa/index'
 import Sidebar from '../Sidebar'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,7 +11,6 @@ export function NavBar() {
   return (
   
       <Container>
-      <FaBars onClick={showSiderbar} />
       {sidebar && <Sidebar active={setSidebar} />}
       <div></div>
       <div className='position'>
