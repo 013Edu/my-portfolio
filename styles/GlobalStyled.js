@@ -29,7 +29,7 @@ export const GlobalStyled = createGlobalStyle`
 
 
 export const ButtonEvent = styled.button`
-
+position: absolute;
 background-color: ${(props) => props.theme.body};
  --color: #560bad;
  font-family: inherit;

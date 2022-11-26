@@ -11,6 +11,7 @@ export const Container = styled.div`
   background-color: ${(props) => props.theme.body2}; 
   border-bottom: 1px solid;
   border-color: rgba(22, 21, 21);
+  min-width: 600px;
   z-index: 1000;
   > svg {
     position: fixed;
@@ -20,6 +21,13 @@ export const Container = styled.div`
     margin-left: 32px;
     cursor: pointer;
   }
+
+  @media (max-width: 600px) {
+      .position{
+        display: none;
+      }
+  }
+
 `;
 
 
