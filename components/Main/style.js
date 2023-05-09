@@ -331,6 +331,8 @@ span:nth-child(2) {
 .career-content_text{
    color: gray;
    font-size: 1em;
+   text-align: justify;
+   max-width: 600px;
 }
 
 .skills{

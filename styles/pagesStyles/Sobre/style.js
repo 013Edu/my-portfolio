@@ -53,7 +53,8 @@ export const HomeButton = styled.button`
     border: none;
     position: absolute;
     bottom: 0;
-    margin: 5rem;
+    margin-bottom: 30px;
+    margin-left: 20px;
     transition: all 0.3s;
     cursor: pointer;
 

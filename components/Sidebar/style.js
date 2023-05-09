@@ -56,3 +56,13 @@ export const ContainerLink = styled.div`
     margin-left: 0.5rem;
   }
 `;
+
+export const ContentIcon = styled.button`
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+`;
